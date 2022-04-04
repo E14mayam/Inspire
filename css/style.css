@@ -265,7 +265,7 @@
 }
 
 .reads .pdf a img {
-  width: 200px;
+  max-width: 200px;
   height: 170px;
   margin-left: auto;
   margin-right: auto;
