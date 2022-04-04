@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #1D1D1D;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+          transform: translate(calc(-50% + 15px), -50%);
+  z-index: 2;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #EEDAD1;
+  opacity: 0.3;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 2;
+}
+
+.hover {
+  background-color: #D4B5B0;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  cursor: none;
+}
+
+.home, .index {
+  background-color: #383E56;
+}
+
+.home-header h1 > {
+  font-size: 25px;
+  font-weight: 800;
+  color: #1D1D1D;
+}
+
+.home-header span {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: overline;
+  color: #EEDAD1;
+}
+
+.continue a {
+  padding: 15px 15px;
+  background-color: #D4B5B0;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.continue a img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel {
+  max-height: 700px;
+  max-width: 500px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+}
+
+.carousel .image-wrapper {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.carousel .image-wrapper .image {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.carousel .image-wrapper .img-1 {
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+}
+
+.carousel .image-wrapper .img-2 {
+  -webkit-transform: scale(0.4, 0.5);
+          transform: scale(0.4, 0.5);
+}
+
+.carousel .image-wrapper .img-3 {
+  -webkit-transform: scale(0.3) rotate(-20deg);
+          transform: scale(0.3) rotate(-20deg);
+}
+
+.carousel .image-wrapper .show {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.carousel .text-slider {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .text-slider .text-wrap {
+  max-height: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+.carousel .text-slider .text-wrap .text-group {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.carousel .text-slider .text-wrap .text-group h2 {
+  line-height: 2.2rem;
+  font-size: 20px;
+  color: #EEDAD1;
+}
+
+.carousel .text-slider .bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .text-slider .bullet span {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #EEDAD1;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.carousel .text-slider .bullet .active {
+  width: 1.1rem;
+  background-color: #1D1D1D;
+  border-radius: 1rem;
+}
+
+.index-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: overline;
+  color: #EEDAD1;
+}
+
+.app {
+  max-width: 500px;
+  min-height: 400px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  border-radius: 10px;
+  border: 2px solid #D4B5B0;
+}
+
+.app img {
+  width: 100%;
+}
+
+.app h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: overline;
+  color: #EEDAD1;
+  text-decoration: none;
+  color: #1D1D1D;
+}
+
+.app h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: overline;
+  color: #EEDAD1;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.app button {
+  padding: 15px 15px;
+  background-color: #D4B5B0;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+  cursor: none;
+}
+
+.app button img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.reads .reads-text {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: overline;
+  color: #EEDAD1;
+  text-decoration: none;
+}
+
+.reads .pdf a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #D4B5B0;
+  font-size: 25px;
+  text-decoration: none;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  max-width: 100%;
+  min-height: 300px;
+  padding: 20px 0px 0px 0px;
+  border: 2px solid #D4B5B0;
+}
+
+.reads .pdf a img {
+  width: 200px;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.connect {
+  margin-top: 130px;
+}
+
+.connect .connect-items h5 {
+  font-weight: 600;
+}
+
+.connect .connect-items h5, .connect .connect-items p {
+  font-size: 13px;
+}
+
+.connect .connect-items img {
+  width: 20px;
+}
+/*# sourceMappingURL=style.css.map */
