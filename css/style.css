@@ -286,4 +286,10 @@
 .connect .connect-items img {
   width: 20px;
 }
+
+@media (max-width: 576px) {
+  .cursor, .cursor2 {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

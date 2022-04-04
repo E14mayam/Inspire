@@ -269,6 +269,12 @@ $alternate-color: #D4B5B0;
     }
 }
 
+@media(max-width: 576px){
+    .cursor, .cursor2{
+        display: none;
+    }
+}
+
 
 
 
